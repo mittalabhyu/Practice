@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="css/style.css" rel="stylesheet">
+
+	<title>My Image Gallery</title>
+</head>
+
+<body>
+  <div class="header" width="100%" style="background-image:url('https://wallpapershome.com/images/pages/pic_h/21140.jpg'); margin-bottom: 12px; padding-bottom: 35px;" >
+  <h1 ><b><i>Happy Birthday To You</b></i></h1>
+  <p style="font-size: 30px; color: black; padding-top: 20px;"><b></b></p>
+</div>
+ 
+
+<br>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <! -->
+  <div class="numbertext">1 / 10</div>
+  <img class="imgone" src="image\rose.jpg">
+  <div class="text">Pink</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 10</div>
+  <img class="imgone" src="image\blue.jpg" >
+  <div class="text">Blue</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 10</div>
+  <img class="imgone" src="image\yellow.jpg" >
+  <div class="text">Yellow</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 10</div>
+  <img class="imgone" src="image\red.jpg" >
+  <div class="text">Red</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 10</div>
+  <img class="imgone" src="image\sky.jpg" >
+  <div class="text">Sky</div>
+</div>'<!--'
+...-->
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 10</div>
+  <img class="imgone" src="image\6.jpg">
+  <div class="text">Sky</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">7 / 10</div>
+  <img class="imgone" src="image\7.jpg" >
+  <div class="text">Sky</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">8 / 10</div>
+  <img class="imgone" src="image\8.jpg">
+  <div class="text">Sky</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">9 / 10</div>
+  <img class="imgone" src="image\9.jpg" >
+  <div class="text">Sky</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">10 / 10</div>
+  <img class="imgone" src="image\10.jpg" >
+  <div class="text">Sky</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+   <span class="dot" onclick="currentSlide(4)"></span> 
+    <span class="dot" onclick="currentSlide(5)"></span> 
+    <span class="dot" onclick="currentSlide(6)"></span> 
+    <span class="dot" onclick="currentSlide(7)"></span> 
+    <span class="dot" onclick="currentSlide(8)"></span> 
+    <span class="dot" onclick="currentSlide(9)"></span> 
+    <span class="dot" onclick="currentSlide(10)"></span> 
+</div>
+<br>
+<marquee behavior="scroll" direction="right" scrollamount="15"><h1 style="word-spacing: 25px; color: #ccff33; font-size: 20px; font-style: italic;"><b>Happy Birthday&nbsp;Happy Birthday&nbsp;
+Happy Birthday&nbsp; Happy Birthday&nbsp; Happy Birthday&nbsp; Happy Birthday&nbsp; Happy Birthday&nbsp; Happy Birthday&nbsp; Happy Birthday&nbsp;  Happy Birthday&nbsp;</b> </h1> </marquee>
+<marquee behavior="scroll" direction="left" scrollamount="20"><h3 style="word-spacing: 30px; color:blue; font-size: 30px;">My Flowers My Flowers My Flowers My Flowers</h3></marquee>
+<marquee behavior="scroll" direction="right" scrollamount="15"><h2 style="word-spacing: 25px; color:red; font-size: 15px; font-style: italic;">Flowers Flowers  Flowers  Flowers Flowers  Flowers  Flowers    Flowers  Flowers Flowers  </h2> </marquee>
+<br>
+  <!--About Section-->
+  <div class="row">
+  <div class="column1">
+
+  <p>This is about Rose.<br>It is a beautiful flower.<br>It is mainly of red colour.</p>
+  </div>
+  <div class="column2">
+  
+  <p>This is about Lily.<br>It is a beautiful flower.<br>It is mainly of white colour.</p>
+  </div>
+  <div class="column3">
+  
+  <p>This is about Tulip.<br>It is a beautiful flower.<br>It is mainly of pink colour.</p>
+  </div>
+  </div>
+<br>
+<div style="text-align: center;">
+<a href="next.html" class="button">Click Here</a>
+</div>
+<br>
+<footer>
+
+</footer width="100%">
+
+<!--Script-->
+ <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+
+  
+
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>

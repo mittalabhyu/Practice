@@ -1,0 +1,98 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-image: url('https://wallpapershome.com/images/pages/pic_h/21140.jpg');
+}
+.tt{
+  font-size: 50px; text-align: center; color:#99ff99;
+  
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.leftpane {
+    width: 15%;
+    height: 100%;
+    float: left;
+ background-image: url('https://wallpapershome.com/images/pages/pic_h/21140.jpg');
+    border-collapse: collapse;
+    background-color:#cc0000;
+}
+
+.middlepane {
+    width: 70%;
+    height: 100%;
+    float: left;
+    background-color:#FF0000;
+    border-collapse: collapse;
+    background-image: url('https://wallpaperaccess.com/full/1877138.jpg');
+
+  }
+
+.rightpane {
+  width: 15%;
+  height: 100%;
+  position: relative;
+  float: right;
+  background-image: url('https://wallpapershome.com/images/pages/pic_h/21140.jpg');
+  border-collapse: collapse;
+  background-color: #cc0000;
+}
+
+.toppane {
+  width: 100%;
+  height: 100px;
+  padding-top: 30px;
+  border-collapse: collapse;
+  background-color:red;
+  background-image: url('https://wallpapershome.com/images/pages/pic_h/21140.jpg');
+}
+#hh{
+  text-align: center;
+  
+}
+img{
+  margin-top: 2px;
+  width: 500px;
+  height: 450px
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 991px) {
+
+  .imgone{
+    width: 100%;
+    align-self: center;
+    
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 767px) {
+  .imgone{
+    width: 100%;
+    align-self: center;
+    height:200px;
+    
+    }
+    .middlepane {
+  
+      position: relative;
+      margin: auto;
+    }
+    .tt{
+      font-size: 30px; text-align: center; color:#99ff99;
+    }
+    .toppane{
+     
+        text-align: center;
+        
+        
+        
+        height: 150px;
+        width: 100%;
+      }
+}
